@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="350" viewBox="0 0 720 350" role="img" aria-labelledby="title desc">
+<title id="title">Scanning a 123 GB folder of software projects</title>
+<desc id="desc">szt: 2.4 s; dua: 2.6 s; dust: 8.1 s; diskus: 11.4 s; gdu: 11.6 s; du: 17.2 s; ncdu: 17.5 s</desc>
+<style>text { font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; } .num { font-variant-numeric: tabular-nums; }</style>
+<text x="24" y="38" font-size="17" font-weight="600" fill="#0b0b0b">Scanning a 123 GB folder of software projects</text>
+<text x="24" y="60" font-size="13" fill="#52514e">667,000 files in 112,000 folders · Mac Studio (M2 Ultra) · macOS 27</text>
+<text x="104" y="96.5" font-size="13" text-anchor="end" font-weight="600" fill="#0b0b0b">szt</text>
+<path d="M116.0,82.0 H175.7 A4,4 0 0 1 179.7,86.0 V98.0 A4,4 0 0 1 175.7,102.0 H116.0 Z" fill="#2a78d6"/>
+<text class="num" x="187.7" y="96.5" font-size="13"><tspan fill="#0b0b0b" font-weight="600">2.4 s</tspan></text>
+<text x="104" y="130.5" font-size="13" text-anchor="end" fill="#52514e">dua</text>
+<path d="M116.0,116.0 H180.9 A4,4 0 0 1 184.9,120.0 V132.0 A4,4 0 0 1 180.9,136.0 H116.0 Z" fill="#c3c2b7"/>
+<text class="num" x="192.9" y="130.5" font-size="13"><tspan fill="#52514e">2.6 s</tspan><tspan dx="8" fill="#898781">1.1× slower</tspan></text>
+<text x="104" y="164.5" font-size="13" text-anchor="end" fill="#52514e">dust</text>
+<path d="M116.0,150.0 H327.0 A4,4 0 0 1 331.0,154.0 V166.0 A4,4 0 0 1 327.0,170.0 H116.0 Z" fill="#c3c2b7"/>
+<text class="num" x="339.0" y="164.5" font-size="13"><tspan fill="#52514e">8.1 s</tspan><tspan dx="8" fill="#898781">3.4× slower</tspan></text>
+<text x="104" y="198.5" font-size="13" text-anchor="end" fill="#52514e">diskus</text>
+<path d="M116.0,184.0 H413.0 A4,4 0 0 1 417.0,188.0 V200.0 A4,4 0 0 1 413.0,204.0 H116.0 Z" fill="#c3c2b7"/>
+<text class="num" x="425.0" y="198.5" font-size="13"><tspan fill="#52514e">11.4 s</tspan><tspan dx="8" fill="#898781">4.7× slower</tspan></text>
+<text x="104" y="232.5" font-size="13" text-anchor="end" fill="#52514e">gdu</text>
+<path d="M116.0,218.0 H419.6 A4,4 0 0 1 423.6,222.0 V234.0 A4,4 0 0 1 419.6,238.0 H116.0 Z" fill="#c3c2b7"/>
+<text class="num" x="431.6" y="232.5" font-size="13"><tspan fill="#52514e">11.6 s</tspan><tspan dx="8" fill="#898781">4.8× slower</tspan></text>
+<text x="104" y="266.5" font-size="13" text-anchor="end" fill="#52514e">du</text>
+<path d="M116.0,252.0 H567.3 A4,4 0 0 1 571.3,256.0 V268.0 A4,4 0 0 1 567.3,272.0 H116.0 Z" fill="#c3c2b7"/>
+<text class="num" x="579.3" y="266.5" font-size="13"><tspan fill="#52514e">17.2 s</tspan><tspan dx="8" fill="#898781">7.2× slower</tspan></text>
+<text x="104" y="300.5" font-size="13" text-anchor="end" fill="#52514e">ncdu</text>
+<path d="M116.0,286.0 H574.0 A4,4 0 0 1 578.0,290.0 V302.0 A4,4 0 0 1 574.0,306.0 H116.0 Z" fill="#c3c2b7"/>
+<text class="num" x="586.0" y="300.5" font-size="13"><tspan fill="#52514e">17.5 s</tspan><tspan dx="8" fill="#898781">7.3× slower</tspan></text>
+<line x1="116" y1="76" x2="116" y2="312" stroke="#c3c2b7" stroke-width="1"/>
+<text x="24" y="338" font-size="11" fill="#898781">Median of 5 warm-cache runs with hyperfine, each tool with its default settings. Lower is better.</text>
+</svg>
