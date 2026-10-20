@@ -1,20 +1,20 @@
 # szt
 
-Find out what's actually taking up your disk space. `szt` (short for sizetree)
-scans a folder on several threads and prints a tree of where the bytes are:
-biggest first, every folder showing the total of everything inside it,
-drilling straight into whatever is big.
+Find out what's taking up your disk space. `szt` (short for sizetree)
+scans a folder on several threads and prints a tree of where the space went:
+biggest first, every folder with the total of everything inside it, and only
+the big folders opened up.
 
 <img src="docs/demo.gif" width="1000" alt="Typing szt /Applications: a progress line counts files for about a second, then a colored tree of folder sizes with bars shows the biggest apps, Xcode at 4.20 GB, iMovie at 3.97 GB and Android Studio at 3.22 GB, out of 33.3 GB">
 
-That's what it prints for `/Applications`: 33 GB in 447,000 files, sized up
-in just over a second. Sizes and bars run from cool to hot by their share of
-the total, and the report always fits your window. We like how it looks; maybe
-you will too.
+That's what it prints for `/Applications`: 33 GB in 447,000 files, scanned in
+1.2 seconds. Sizes and bars are colored from cool to hot by their share of the
+total, and by default the report fits in your terminal; `--all` prints every
+entry.
 
-It's quick, too: 2.4 seconds for a 123 GB folder of 667,000 files, where `du`
-takes 17 (see [Benchmarks](#benchmarks)). More about how it works and how it
-compares: [urtti.com/szt](https://urtti.com/szt).
+On a Mac Studio it scans a 123 GB folder of 667,000 files in 2.4 seconds, where
+`du` takes 17 (see [Benchmarks](#benchmarks)). More about how it works and how
+it compares: [urtti.com/szt](https://urtti.com/szt).
 
 ## Install
 
@@ -60,7 +60,7 @@ sudo szt / -X       # the whole startup disk, system volumes too
 - Each line is a folder or a file with its **total size**, a bar and its share
   of everything scanned.
 - Entries are picked largest-first, and a folder's children only compete once
-  the folder itself made the cut. So the tree opens up exactly where the space
+  the folder itself made the cut. So the tree opens up where the space
   is and stays shut elsewhere.
 - `… 3 files, 10 folders` sums up what's left inside a folder after the lines
   shown above it.
@@ -75,7 +75,7 @@ sudo szt / -X       # the whole startup disk, system volumes too
 
 - **Space on disk**, like `du`, not file length. Sparse files (Docker's
   `Docker.raw`, VM disks), APFS-compressed files (most of `/Applications`)
-  and cloud files that aren't downloaded count only what they really occupy.
+  and cloud files that aren't downloaded count only what they occupy.
   The summary also shows the apparent size; `-a` sorts by it instead.
 - **Hard links** count once.
 - **Symlinks** are never followed.
