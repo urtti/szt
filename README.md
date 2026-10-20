@@ -19,10 +19,12 @@ compares: [urtti.com/szt](https://urtti.com/szt).
 ## Install
 
 ```sh
-brew tap urtti/szt && brew install szt
+brew install urtti/szt/szt
 ```
 
-Upgrade with `brew update && brew upgrade szt`. Needs macOS 15 or later.
+The full name adds the urtti/szt tap and tells Homebrew to trust this one
+formula from it. Upgrade with `brew update && brew upgrade szt`. Needs macOS 15
+or later.
 
 To build it from source instead, with Xcode or the Command Line Tools (Swift 6):
 
