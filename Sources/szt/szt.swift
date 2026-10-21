@@ -30,7 +30,6 @@ struct Szt {
             if index > 0 { Console.write("\n") }
             if !report(on: path, options: options, terminal: terminal) { status = 1 }
         }
-        // Skip tearing down a tree of possibly millions of nodes.
         exit(status)
     }
 
